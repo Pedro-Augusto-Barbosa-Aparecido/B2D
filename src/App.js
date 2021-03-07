@@ -14,7 +14,7 @@ function App() {
 
   const success = () => {
     
-    setDecimal(convertNumber(binState, binState.length))
+    setDecimal(convertNumber(binState, binState.length) === -1 ? 0 : convertNumber(binState, binState.length))
     setMessage("") 
 
   }

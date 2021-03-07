@@ -9,6 +9,16 @@ function convertNumber(bin, length) {
     initBasesArray()
 
     for (var i = 0; i < length; i++) {
+        if (bin[i] === "0") {
+            counter += 1
+        }
+    }
+
+    if (counter === length) {
+        return -1
+    }
+
+    for (var i = 0; i < length; i++) {
         if (bin[i] === "0") { 
             counter += 1
         } else if (bin[i] === "1") {
