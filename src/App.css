@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
+  background-color: gray;
+  justify-content: center;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: 2000;
+  height: calc(1080px - 111px);
+}
+
+.InputBoxContainer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 25%;
+}
+
+.InputBox {
+  width: 100%;
+  border-radius: 10px;
+  border-width: 3px;
+  height: 40px;
+  border-color: black;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4px;
+  font-size: 20px;
+}
+
+.TextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Text {
+  font: 600;
+  font-size: 20px;
+  font-family: serif;
+  font-style: italic;
+  color: black;
+}
+
+.ButtonBoxContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.ButtonBox {
+  margin: 20px;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 1px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #601010;
 }
